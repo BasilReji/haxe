@@ -1,27 +1,28 @@
 class Main {
 	static function main() {
-		trace("Hello, world!");
-		trace('Good bye, World!');
+		var name = 'Basil Reji';
+		trace(name);
+		Sys.print(name);
+		var address = 'Basil Reji \n Panthanamolel house \n North Mazhuvannoor P.O.';
+		trace(address);
+		var question = 'Enter your name';
 
-		#if js
-		trace("Hello Javascript!");
-		#end
+		Sys.println(question);
+		// var consoleInput = Sys.stdin(); // Take value from console.
+		// name = consoleInput.readLine();
+		// trace(consoleInput);
 
-		#if python
-		trace("Hi, Python!");
-		#end
+		var doorOpen:Bool = true;
+		trace(doorOpen);
 
-		var appleCount:Int;
-		appleCount = 10;
-		trace(appleCount);
-		appleCount = 8;
-		trace(appleCount);
-		var orangeCount = 30; // No need to add the type haxe will recognize.
+		var name1 = 'basil';
+		var name2 = 'reji';
 
-		appleCount = 10 + 3;
-		orangeCount = 45;
+		var nameSame = name1 == name2;
 
-		trace(appleCount + orangeCount);
+		trace(nameSame);
+
+		
 	}
 }
 // cmd+shift+b to build py & js files, need to add those targets inside the hxml file.
